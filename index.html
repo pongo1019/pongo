@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!-- どのバージョンのHTMLで書かれているかを宣言 -->
+<html lang="ja">
+<!-- HTML文書と言語を宣言 -->
+	<head>
+		<meta charset="utf-8">
+		<!--headを設定したら初めに文字コードを宣言-->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="discription"content="HTMLとCSSのまとめ">
+		<meta name="keywords"content="HTML,CSS">
+		<title>HTML5とCSS3の基本</title>
+		<link rel="stylesheet"href="start.css">
+	</head>
+	<body><!-- ここからページ内容 -->
+		<header>
+			<h1>HTMLとCSSのまとめサイト</h1>
+		</header>
+			<label for="open-close">
+				<nav>
+				<input type="checkbox" id="open-close"><!--labelを配置する為、見た目はメニューに隠れて見えない状態-->
+				<span></span><!--ハンバーガーメニューの一番上の線を作っている-->
+					<ul id="menu">
+						<li><a href="#list">リスト</a></li>
+						<li><a href="#table">テーブル</a></li>
+						<li><a href="#form">フォーム</a></li>
+					</ul>
+				</nav>
+			</label>
+		<main>
+			<section>
+				<h2>html宣言について</h2>
+				<p>htmlの初めに書くこと</p>
+				<article>
+					<h3>HTML5宣言の入力</h3>
+					<p>htmlファイルの先頭に記述</p>
+				</article>
+				
+				<article>
+					<h3>HTML文書の宣言と言語を指定</h3>
+					<p>HTML5宣言の入力の下にHTML文書の宣言と言語を記述</p>
+				</article>
+			</section>
+
+			<section>
+				<h2>headタグ内で作業したこと</h2>
+				<p>文書情報の指定</p>
+				<article>
+					<h3>①文字コードの指定</h3>
+					<p>head要素の最初に記述</p>
+				</article>
+				
+				<article>
+					<h3>②ビューポートの指定</h3>
+					<p>スマホやタブレットへの対応として記述</p>
+				</article>
+				
+				<article>
+					<h3>③ディスクリプションとキーワードの指定</h3>
+					<p>ディスクリプションはページの説明文・キーボードはGoogleサポート外</p>
+				</article>
+				
+				<article>
+					<h3>④ページタイトルの指定</h3>
+					<p>ブラウザのタイトルバーやタブに表示</p>
+				</article>
+				
+				<article>
+					<h3>⑤外部ファイル読み込み<h3>
+					<p>CSSやJS、WEBフォントなど読み込み可能</p>
+				</article>				
+			</section>
+			
+			<section>
+				<h2>bodyタグ内で作業したこと</h2>
+				<p>ページ内容の指定</p>
+				
+				<article>
+				<h3>①ブロック要素の特徴</h3>
+				<p>領域はブラウザの<strong>横幅いっぱい</strong>にとられ、前後が改行される</p>
+				</article>
+				
+				<article>
+				<h3>②インライン要素の特徴</h3>
+				与えられた要素の見栄えはその場で確認
+				</article>
+				
+				<article>
+				<h3>③コメントアウト</h3>
+				エディタ上でのメモ書きとして使用可能
+				TeraPadではグレーの文字色で表示
+				</article>
+				
+				<article>
+				<h3>④階層(入れ子)構造について</h3>
+				エディタでコーディングする際は左からの文字開始位置(インデント)を意識して入力
+				</article>
+				
+				<article>
+				<h3>⑤ページの構成要素(レイアウト)</h3>
+				ⅰ.ヘッダー
+				ロゴやWEBサイト名・ナビゲーションや検索フィールドなど
+				ファイル上部に記述
+				
+
+				ⅱ.フッター
+				コピーライト表記や関連ページへのナビゲーション、著作権者情報など
+				ファイル下部に記述
+
+				ⅲ.メインエリア
+				ページ内のメイン内容を囲む
+
+				ⅳ.補足エリア
+				ページ内の補足内容を囲む
+
+				ⅴ.ナビゲーション
+				nav要素内に階層リストを入れ子で作成
+				リスト
+				テーブル
+				フォーム
+
+				ⅵ.その他のエリア
+				section
+				ひとまとめ
+				article
+				ひとつの記事
+				div
+				汎用的なボックス
+			</article>
+			
+			<article>
+				<h3>⑥よく使用する要素</h3>
+				見出し文字
+				heading(ヘディング)のh
+				h1～h6まで
+
+				段落
+				paragraph(パラグラフ)のp
+				段落内で強制改行するときはbreak(ブレイク)のbr
+			</article>
+			
+			<article>
+				<h3>⑦知っておきたいインライン要素</h3>
+				ⅰ.太字と重要性
+				<b>太字</b>
+				<strong>重要性</strong>
+
+				ⅱ.斜体とアクセント
+				<i>斜体</i>
+				<em>アクセント</em>
+
+				ⅲ.上付き文字と下付き文字
+				cm<sup>2</sup>
+				CO<sub>2</sub>
+
+				ⅳ.画像
+				<img src="gazou/rabbit.gif" alt="うさぎ">
+				<img src="gazou/rabbit.gif" alt="うさぎ"width="50" height="50"title="rabbit">
+				<img src="gazou/rabbit.gif" alt="うさぎ"width="70" height="80"title="rabbit">
+				<img src="gazou/rabbit.gif" alt="うさぎ"width="10" height="10"title="rabbit">
+				<img src="gazou/rabbit.gif" alt="うさぎ"width="150" title="rabbit">
+				
+				ⅴ.リンク
+				<a href="https://www.yahoo.co.jp/" target="_blank">yahooのページを表示</a>
+				
+				ⅵ.範囲指定
+				<p id="html">
+					<span>H</span>yper 
+					<span>T</span>ext 
+					<span>M</span>arkup 
+					<span>L</span>anguage
+				</p>
+			</article>
+			
+			<article id="list">
+				<h3>⑧さまざまなリスト</h3>
+				<p>記号リスト</p>
+				<ul>
+					<li>近畿地方
+						<ul>
+							<li>大阪府
+								<ul>
+									<li>大阪市</li>
+									<li>堺市</li>
+								</ul>
+							</li><!--	大阪市の閉めタグ-->
+							<li>兵庫県
+								<ul>
+									<li>神戸市</li>
+									<li>姫路市</li>
+								</ul>
+							</li><!--	神戸市の閉めタグ-->
+						</ul><!--府県リストの閉めタグ-->
+					</li><!--	近畿地方の閉めタグ-->
+				</ul>
+
+				<p>番号リスト</p>
+				<ol>
+					<li>東京</li>
+					<li>大阪</li>
+					<li>福岡</li>
+				</ol>
+
+				<p>開始番号指定</p>
+				<ol start="101">
+				<!--番号リストは開始番号を指定できる-->
+					<li>東京</li>
+					<li>大阪</li>
+					<li>福岡</li>
+				</ol>
+
+				<p>降順指定</p>
+				<ol reversed>
+					<li>東京</li>
+					<li>大阪</li>
+					<li>福岡</li>
+				</ol>
+				
+				<p>CSSでいじる</p>
+				<ol id="marker">
+					<li>東京</li>
+					<li>大阪</li>
+					<li>福岡</li>
+				</ol>
+
+				<p>定義リスト</p>
+				<dl>
+					<dt>1時限目</dt>
+					<dd>10:00～10:50</dd>
+					<dt>2時限目</dt>
+					<dd>11:00～11:50</dd>
+					<dt>3時限目</dt>
+					<dd>12:00～12:50</dd>
+					<dt>4時限目</dt>
+					<dd>13:40～14:30</dd>
+					<dt>5時限目</dt>
+					<dd>14:40～15:30</dd>
+					<dt>6時限目</dt>
+					<dd>15:40～16:30</dd>
+				</dl>
+			</article>
+			
+			<article>
+				<h3>⑨その他のブロック要素</h3>
+				<pre>そのまま表示</pre>
+				<font color="red" size="10">フォントの色を変更・サイズを変更</font>
+				(html4.01以前の記述方法)
+				左端からの位置に注目
+				<hr><!-- 実際ブラウザに区切り線が表示される -->
+				内容の区切り
+			</article>
+			
+			<article id="table">
+				<h3>⑩テーブル</h3>
+				<p>いわゆる表のこと</p>
+				<p>４つのタグで基本の表を作成＜table＞＜tr＞＜th＞＜td＞</p>
+				<p>表題の指定＜caption＞</p>
+				<p>表のセルに画像を表示</p>
+				<p>セルの結合colspanとrowspan</p>
+
+				<table border="1">
+					<tr><th>くだもの</th></tr>
+					<tr><td>みかん</tr></td>
+					<tr><td>りんご</tr></td>
+					<tr><td>バナナ</tr></td>
+				</table>
+				
+				<table id="vege">
+					<caption>やさい</caption>
+					<tr>
+						<th>根菜</th>
+						<th>葉菜</th>
+						<th>果菜</th>
+					</tr>
+					<tr><td>じゃがいも</td><td>キャベツ</td><td>トマト</td></tr>
+					<tr><td>にんじん</td><td>セロリ</td><td>ピーマン</td></tr>
+				</table>
+
+				<table border="8">
+				<caption>各地の天気（抜粋）</caption>
+				<tr>
+				<th colspan="2">地方</th>
+					<th>6/24(土)</th>
+					<th>6/25(日)</th>
+				</tr>
+				<tr>
+					<td rowspan="2">関東</td>
+					<td>東京</td>
+					<td><img src="gazou/hare.gif" alt="晴れマーク"></td>
+					<td><img src="gazou/kumori.gif" alt="曇りマーク"></td>
+				</tr>
+				<tr>
+					<td>神奈川</td>
+					<td><img src="gazou/ame.gif" alt="雨マーク"></td>
+					<td><img src="gazou/kumori.gif" alt="曇りマーク"></td>
+				</tr>
+				<tr>
+					<td>東海</td>
+					<td>愛知</td>
+					<td><img src="gazou/ame.gif" alt="雨マーク"></td>
+					<td><img src="gazou/kumori.gif" alt="曇りマーク"></td>
+				</tr>
+				<tr>
+					<td rowspan="3">近畿</td>
+					<td>大阪</td>
+					<td><img src="gazou/hare.gif" alt="晴れマーク"></td>
+					<td><img src="gazou/kumori.gif" alt="曇りマーク"></td>
+				</tr>
+				<tr>
+					<td>兵庫</td>
+					<td><img src="gazou/hare.gif" alt="晴れマーク"></td>
+					<td><img src="gazou/kumori.gif" alt="曇りマーク"></td>
+				</tr>
+				<tr>
+					<td>京都</td>
+					<td><img src="gazou/hare.gif" alt="晴れマーク"></td>
+					<td><img src="gazou/kumori.gif" alt="曇りマーク"></td>
+				</tr>
+				</table>
+			</article>
+			
+			<article id="form">
+				<h3>⑪フォーム</h3><!--実際にデータを送信したりするには、プログラミングが必要-->
+				<form>
+					<table border="1">
+						<tr><!--行の作成-->
+							<th><!--見出しセルにtableを入れる-->
+								<label for="shimei">1行の入力フィールド</label>
+							</th>
+							<td><!--データセルにinputを入れる-->
+								<input type="text" name="fullname" id="shimei" placeholder="入力例：ほげ" required> <!--テキストを入力するフォーム-->
+								<!--id属性でlabelのshimeiを選択している-->
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<label for="kensaku">検索フィールド</label>
+							</th>
+							<td>
+								<input type="search" name="sagasu" id="kensaku">
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<label for="phone">電話番号入力フィールド</label>
+							</th>
+							<td>
+								<input type="tel" name="telephone" id="phone">
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<label for="url">URL入力フィールド</label>
+							</th>
+							<td>
+								<input type="url" name="website" id="url">
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<label for="mail">email入力フィールド</label>
+							</th>
+							<td>
+								<input type="email" name="tayori" id="mail">
+							</td>
+						</tr>
+					<tr>
+						<th>
+							<label for="hidsuke">date入力フィールド</label>
+						</th>
+						<td>
+							<input type="date" name="nittei" id="hidsuke">
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<label for="pw">パスワード入力</label>
+						</th>
+						<td>
+							<input type="password" name="angou" id="pw">
+						</td>
+					</tr>
+
+					<p>ラジオボタン</p>
+					<label for="y">はい</label>
+					<input type="radio" name="yesno" id="y"value="yes">
+					<label for="n">いいえ</label>
+					<input type="radio" name="yesno" id="n"value="no">
+
+					<p>チェックボックス</p>
+					<label for="aka">赤</label>
+					<input type="checkbox" name="rainbow" id="aka" value="red">
+					<label for="daidai">橙</label>
+					<input type="checkbox" name="rainbow" id="daidai" value="orenge">
+					<label for="kiiro">黄</label>
+					<input type="checkbox" name="rainbow" id="kiiro" value="yellow">
+					<label for="midori">緑</label>
+					<input type="checkbox" name="rainbow" id="midori" value="green">
+					<label for="aoiro">青</label>
+					<input type="checkbox" name="rainbow" id="aoiro" value="blue">
+					<label for="aiiro">藍</label>
+					<input type="checkbox" name="rainbow" id="aiiro" value="indigo">
+					<label for="murasaki">紫</label>
+					<input type="checkbox" name="rainbow" id="murasaki" value="purple">
+					
+					<p>セレクトボックス</p>
+					<select name="fruit">
+						<option value="lemon">レモン</optin>
+						<option value="apple">りんご</optin>
+						<option value="banana">バナナ</optin>
+					</select>
+
+					<p>テキストエリア</p>
+					<textarea name="toiawase"></textarea>
+
+					<input type="submit" value="送信">
+					<input type="reset" value="取消">
+				</form>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<small>&copy;2021 LaLaMates</small>
+			<!-- smallタグは著作権情報を示すタグとして使用されている -->
+			<!-- &copy;を使用することで著作権マークを表示できる -->
+		</footer>
+	</body>
+</html>
